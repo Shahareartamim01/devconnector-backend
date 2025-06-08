@@ -1,6 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import testRoutes from './routes/testRoutes.js';
+import greetRoutes from './routes/greetRoutes.js';
 
 dotenv.config();
 
@@ -14,6 +15,8 @@ app.get('/', (req, res) => {
   res.send('API Running ✅');
 });
 app.use('/api', testRoutes);
+
+app.use('/api', greetRoutes);
 
 const PORT = process.env.PORT || 5000;
 
