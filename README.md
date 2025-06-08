@@ -6,7 +6,7 @@ Basic Express server with test API routes.
 
 - `/` → API Running
 - `/api/test` → Test API route
-- `/api/greet?name=Tareen` → Dynamic greet API
+- `/api/greet?name=name` → Dynamic greet API
 
 ## Tech Stack
 
